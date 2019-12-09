@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d701fe99fdd5d3a438d871503c3f5d2b
+timeCreated: 1534174491
+licenseType: Store
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - arrowMesh: {fileID: 4300000, guid: 595e39c2c4e036b4792ca0b6a7f6e5c1, type: 3}
+  - arrowMaterial: {fileID: 2100000, guid: 087344a9b4eb0d041925fe86de3736a1, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
