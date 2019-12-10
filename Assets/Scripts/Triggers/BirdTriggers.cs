@@ -10,17 +10,13 @@ public class BirdTriggers : MonoBehaviour
     
 
     // Start is called before the first frame update
-    void Start()
-    {
-        bird = gameObject.transform.parent.gameObject;
-        
-    }
+
 
     private void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == ("Player"))
         {
-            spawnpoint = bird.transform.position;
+            spawnpoint = transform.position;
             Instantiate(poop, spawnpoint, transform.rotation);
             
             

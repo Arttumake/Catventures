@@ -24,7 +24,7 @@ public class SidewaysWind : MonoBehaviour
     {
         if (col.gameObject.tag == ("Player"))
         {
-            rb.AddForce(Vector3.back * windMulti, ForceMode.VelocityChange);
+            rb.AddForce(Vector3.back * windMulti, ForceMode.Force);
 
 
         }

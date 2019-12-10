@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class OnHit : MonoBehaviour
 {
     
-    public GameObject projectile;
+    
     private void Start()
     {
         
