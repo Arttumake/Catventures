@@ -8,6 +8,7 @@ public class SidewaysWind : MonoBehaviour
     public BoxCollider windTrigger;
     public float windMulti = 8.0f;
     public GameObject sidewaysWind;
+    public GameObject windParticles;
     public GameObject windBlower;
     public bool onOff = true;
     public float windCooldown = 1.0f;
@@ -40,13 +41,14 @@ public class SidewaysWind : MonoBehaviour
                 onOff = false;
                 windTrigger.enabled = true;               
                 windBlower.GetComponent<Renderer>().material.color = Color.red; // comment this line if no material used for windblower
+                windParticles.SetActive(true);
                 yield return new WaitForSeconds(windCooldown);
 
             }
             else
             {
                 onOff = true;
-
+                windParticles.SetActive(false);
                 windTrigger.enabled = false;
                 windBlower.GetComponent<Renderer>().material.color = Color.green; // comment this line if no material used for windblower
                 yield return new WaitForSeconds(windCooldown);
