@@ -661,13 +661,16 @@ GameObject:
   m_Component:
   - component: {fileID: 4637222678936992}
   - component: {fileID: 95939548031221494}
+  - component: {fileID: 1410778468}
+  - component: {fileID: 1410778467}
+  - component: {fileID: 1410778470}
   m_Layer: 0
   m_Name: SCharacter_Bird1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4637222678936992
 Transform:
   m_ObjectHideFlags: 0
@@ -675,9 +678,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844827636381818}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5000012, y: 0.5, z: 0.50000125}
   m_Children:
   - {fileID: 4912151243448218}
   - {fileID: 4745378725035316}
@@ -694,7 +697,7 @@ Animator:
   m_GameObject: {fileID: 1844827636381818}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 175febab25a133545bb941cb948a5bf3, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f5707d17377134345bd90be4ecfe045d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -703,6 +706,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &1410778468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844827636381818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 17.288744, y: 27.347694, z: 5.200991}
+  m_Center: {x: 2.035366, y: -13.173673, z: 2.2505162}
+--- !u!114 &1410778467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844827636381818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb4d950ccf73bdb4db38caa4ac6bd60f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bird: {fileID: 1844827636381818}
+  poop: {fileID: 1586912504310362672, guid: 8d306fd83ecfb604683958d9a951fb82, type: 3}
+  spawnpoint: {x: 0, y: 0, z: 0}
+--- !u!114 &1410778470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844827636381818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfd98ffc2163e0049b59a35f67a426cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedModifier: 5
 --- !u!1 &1890687264963206
 GameObject:
   m_ObjectHideFlags: 0
